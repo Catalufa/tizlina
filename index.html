@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tizlina's Handmade Creations are myself Christina (Tina) and my Little sister Elizabeth (Liz). We both love making and creating and can put our hand to most crafts.">
+  <title>Tizlina's Handmade Creations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="overlay"></div>
+  <nav>
+    <img class="leaves" src="leaves.png" alt="Leaves">
+    <p>Tizlina's Handmade Creations</p>
+    <a></a>
+    <!-- <img class="cart" src="cart.svg" alt=""> -->
+  </nav>
+  <section class="main">
+    <section class="items">
+      <div id="products" class="item" style="background: #c8a57d">
+        <b>Products</b>
+        <span class="material-symbols-outlined">
+        storefront
+        </span>
+      </div>
+      <div id="events" class="item" style="background: #bb9870">
+        <b>Events</b>
+        <span class="material-symbols-outlined">
+        event
+        </span>
+      </div>
+      <div id="about" class="item" style="background: #ae8b63">
+        <b>About</b>
+        <span class="material-symbols-outlined">
+        group
+        </span>
+      </div>
+      <div id="contact" class="item" style="background: #a27f57">
+        <b>Contact</b>
+        <span class="material-symbols-outlined">
+        call
+        </span>
+      </div>
+    </section>
+    <section class="home section" style="display: flex;">
+      <div class="banner">
+        <p>We thank you for supporting our small business</p>
+      </div>
+      <div class="carousel">
+        <div class="card" style="background-image: url('carousel/1.jpg')" selected="true">
+          <div class="card-content">
+            <h2>Buy our handmade creations</h2>
+            <p>Support us and buy online</p>
+            <button onclick="goTo('products')">See products</button>  
+          </div>
+        </div>
+        <div class="card" style="background-image: url('carousel/2.jpg')">
+          <div class="card-content">
+            <h2>See it for yourself</h2>
+            <p>Come to an event in-person!</p>
+            <button onclick="goTo('events')">Find our events</button>  
+          </div>
+        </div>
+        <div class="card" style="background-image: url('carousel/3.jpg')">
+          <div class="card-content">
+            <h2>Find out about us</h2>
+            <p>See the inspiration behind our products</p>
+            <button onclick="goTo('about')">Go there</button>  
+          </div>
+        </div>
+        <div class="card" style="background-image: url('carousel/4.jpg')">
+          <div class="card-content">
+            <h2>Follow our socials</h2>
+            <p>Get the latest updates on Facebook</p>
+            <button onclick="goTo('contact')">Our Socials</button>  
+          </div>
+        </div>
+        <div class="card" style="background-image: url('carousel/5.jpg')">
+          <div class="card-content">
+            <h2>Send us a message</h2>
+            <p>Let us know what you think</p>
+            <button onclick="goTo('contact')">Contact us</button>  
+          </div>
+        </div>
+        <div class="back"><</div>
+        <div class="forward">></div>
+      </div>
+    </section>
+    <section class="products section">
+    </section>
+    <section class="events section">
+      <iframe src="https://www.facebook.com/tizlinaUK/" frameborder="0"></iframe>
+    </section>
+    <section class="about section">
+      <img src="splash.png" alt="Images of products">
+      <h1>Welcome to Tizlina's Handmade Creations</h1>
+      <p>Tizlina's Handmade Creations are myself Christina (Tina) and my Little sister Elizabeth (Liz).  
+      We both love making and creating and can put our hand to most crafts.
+      I love crochet and sewing amongst other crafts and Liz loves creating awesome smells in her Tin candles and wax melts.
+      We strive to make the best quality items and hope you like them too x</p>
+    </section>
+    <section class="contact section">
+      <div>        
+        <p>Find us on</p>
+        <button onclick="window.open('https://www.facebook.com/tizlinaUK/')">Facebook</button>
+      </div>
+      <div>        
+        <p>Buy on</p>
+        <button onclick="window.open('https://www.etsy.com/uk/shop/TizlinasHandmade')">Etsy</button>
+      </div>
+      <div>        
+        <p>Talk to us</p>
+        <button onclick="window.open('mailto:hello@tizlina.com')">Email</button>
+      </div>
+    </section>
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
